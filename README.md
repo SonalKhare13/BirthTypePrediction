@@ -1,2 +1,2 @@
-# BirthTypePrediction
-Birth data Prediction project
+# Project3
+Boot Camp Final Project

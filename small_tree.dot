@@ -1,0 +1,32 @@
+digraph Tree {
+node [shape=box] ;
+0 [label="Mothers_Height_in_Inches <= 63.5\ngini = 0.5\nsamples = 28398\nvalue = [22634, 22366]\nclass = vaginal"] ;
+1 [label="Previous_Cesarian_Y <= 0.5\ngini = 0.498\nsamples = 12213\nvalue = [9093, 10267]\nclass = c-section"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="Age_of_Mother <= 29.5\ngini = 0.477\nsamples = 9083\nvalue = [8768, 5654]\nclass = vaginal"] ;
+1 -> 2 ;
+3 [label="gini = 0.456\nsamples = 5362\nvalue = [5566, 3023]\nclass = vaginal"] ;
+2 -> 3 ;
+4 [label="gini = 0.495\nsamples = 3721\nvalue = [3202, 2631]\nclass = vaginal"] ;
+2 -> 4 ;
+5 [label="#_of_Previous_Cesareans <= 1.5\ngini = 0.123\nsamples = 3130\nvalue = [325, 4613]\nclass = c-section"] ;
+1 -> 5 ;
+6 [label="gini = 0.16\nsamples = 2089\nvalue = [289, 3001]\nclass = c-section"] ;
+5 -> 6 ;
+7 [label="gini = 0.043\nsamples = 1041\nvalue = [36, 1612]\nclass = c-section"] ;
+5 -> 7 ;
+8 [label="Induction_of_labor_Y <= 0.5\ngini = 0.498\nsamples = 16185\nvalue = [13541, 12099]\nclass = vaginal"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="Previous_Cesarian_Y <= 0.5\ngini = 0.498\nsamples = 12052\nvalue = [8957, 10141]\nclass = c-section"] ;
+8 -> 9 ;
+10 [label="gini = 0.469\nsamples = 8735\nvalue = [8652, 5203]\nclass = vaginal"] ;
+9 -> 10 ;
+11 [label="gini = 0.11\nsamples = 3317\nvalue = [305, 4938]\nclass = c-section"] ;
+9 -> 11 ;
+12 [label="NO_RISK <= 0.5\ngini = 0.419\nsamples = 4133\nvalue = [4584, 1958]\nclass = vaginal"] ;
+8 -> 12 ;
+13 [label="gini = 0.476\nsamples = 1303\nvalue = [1254, 801]\nclass = vaginal"] ;
+12 -> 13 ;
+14 [label="gini = 0.383\nsamples = 2830\nvalue = [3330, 1157]\nclass = vaginal"] ;
+12 -> 14 ;
+}
